@@ -130,6 +130,32 @@ rtp-sample: {
 	secret = "adminpwd"
 }
 
+aviot-stream :
+{
+  type = "rtp";
+  id = "10";
+  description = "aviot-stream-60001";
+  is_private = "no";
+  audio = "yes";
+  audioport = "60001";
+  audiopt = "111";
+  audiortpmap = "OPUS/48000/2";
+  data = "no";
+};
+
+aviot-stream-2 :
+{
+  type = "rtp";
+  id = "11";
+  description = "aviot-stream-60002";
+  is_private = "no";
+  audio = "yes";
+  audioport = "60002";
+  audiopt = "111";
+  audiortpmap = "OPUS/48000/2";
+  data = "no";
+};
+
 cam1-udp :
 {
   type = "rtp";
